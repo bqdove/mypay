@@ -9,6 +9,7 @@
             "email": "bqdove@126.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "php": ">=7.0"
     },
