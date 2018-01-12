@@ -28,8 +28,7 @@ class Wechat implements GatewayApplicationInterface
 
     public function pay($gateway, $params = [])
     {
-        // TODO: Implement pay() method.
-//        $this->payload = array_merge($this->payload, $params);
+        /*$this->payload = array_merge($this->payload, $params);*/
         $this->payload = [];
         $method = str_replace(' ', '', ucwords(str_replace(['-', '_'], ' ', $gateway)));
         $gateway = get_class($this) . '\\' . $method . 'Gateway';
@@ -59,27 +58,22 @@ class Wechat implements GatewayApplicationInterface
 
     public function find($order)
     {
-        // TODO: Implement find() method.
     }
 
     public function cancle($order)
     {
-        // TODO: Implement cancle() method.
     }
 
     public function close($order)
     {
-        // TODO: Implement close() method.
     }
 
     public function success()
     {
-        // TODO: Implement success() method.
     }
 
     public function verfiy()
     {
-        // TODO: Implement verfiy() method.
     }
 
     public function __call($method, $params)
